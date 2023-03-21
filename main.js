@@ -85,12 +85,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./space.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const portraitTexture = new THREE.TextureLoader().load('image_files/southern_ring_nebula.png');
+const portraitTexture = new THREE.TextureLoader().load('./image_files/southern_ring_nebula.png');
 
 const portrait = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: portraitTexture }));
 
@@ -98,8 +98,8 @@ scene.add(portrait);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('./moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('./normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
