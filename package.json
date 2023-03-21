@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "three": "^0.128.0"
-  }
+  },
+  "main": "index.js",
+  "author": "gabrielsouza95 <alves95gabriel@gmail.com>",
+  "license": "MIT"
 }
