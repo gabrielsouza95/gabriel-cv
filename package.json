@@ -2,9 +2,9 @@
   "name": "three-demo",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
+    "dev": "vite dist/",
+    "build": "vite build dist/",
+    "serve": "vite preview dist/",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
