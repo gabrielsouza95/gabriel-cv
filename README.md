@@ -13,7 +13,7 @@ yarn run dev
 
 ## CI/CD
 
-This project runs on the GitHub Pages [using a JS lib](https://yarnpkg.com/package/gh-pages) to keep it simple to use.
+This project runs on the GitHub Pages [using gh-pages JS lib](https://yarnpkg.com/package/gh-pages) to keep it simple to use.
 
 After installing the lib with
 ```bash
