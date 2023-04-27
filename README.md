@@ -5,10 +5,10 @@
 
 ## Usage
 
-```
-git clone <this-repo>
-npm install
-npm run dev
+```bash
+git clone this-repo
+yarn install
+yarn run dev
 ```
 
 ## References
