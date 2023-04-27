@@ -11,6 +11,34 @@ yarn install
 yarn run dev
 ```
 
+## CI/CD
+
+This project runs on the GitHub Pages [using a JS lib](https://yarnpkg.com/package/gh-pages) to keep it simple to use.
+
+After installing the lib with
+```bash
+yarn install 
+```
+go to your `package.json` file and paste this inside you `scripts` key
+
+```json
+"scripts": {
+    "dev": "vite code_folder/",
+    "build": "vite build code_folder/",
+    "serve": "vite preview code_folder/", //<< don't forget the comma ','
+    "deploy": "gh-pages -d code_folder/" //<< paste this line and use the folder in which your code is in, if it's on the root folder your in, just use '.' as your folder name
+  }
+```
+
+When deploying your project, you must run:
+
+```bash
+yarn run build
+yarn run deploy
+```
+
+[Here you find more information on how to configure it correctly](https://github.com/tschaub/gh-pages)
+
 ## References
 ~~As we need to be up on the shoulder of giants, we need to give them their credits, right? No?~~ :thinking:
 
