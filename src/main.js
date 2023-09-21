@@ -89,7 +89,7 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const portraitTexture = new THREE.TextureLoader().load('./assets/image_files/southern_ring_nebula.png');
+const portraitTexture = new THREE.TextureLoader().load('./assets/image_files/profile.jfif');
 
 const portrait = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: portraitTexture }));
 
