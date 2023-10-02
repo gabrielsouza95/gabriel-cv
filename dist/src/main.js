@@ -1,6 +1,10 @@
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 import { STLLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/STLLoader.js'
+import { NavBarControl } from './NavBarControl.js';
 
+// Navbar
+//create navbar controls
+const navBarControl = new NavBarControl(document, window);
 
 // Setup
 
