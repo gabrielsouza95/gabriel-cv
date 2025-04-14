@@ -1,5 +1,6 @@
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 import { STLLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/STLLoader.js'
+import { PointerLockControls } from 'https://unpkg.com/browse/three@0.127.0/examples/jsm/controls/PointerLockControls.js'
 import { NavBarControl } from './NavBarControl.js';
 
 // Navbar
@@ -16,6 +17,25 @@ const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
 
+// related to the addition of the game control on the scene
+let camera2, scene2, controls2;
+
+let moveForward = false;
+let moveBackward = false;
+let moveLeft = false;
+let moveRight = false;
+let canJump = false;
+
+const objects = [];
+
+let prevTime = performance.now();
+const velocity = new THREE.Vector3();
+const direction = new THREE.Vector3();
+const vertex = new THREE.Vector3();
+const color = new THREE.Color();
+// related to the addition of the game control on the scene
+
+//configures the render and main camera
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
